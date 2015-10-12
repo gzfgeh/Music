@@ -204,8 +204,8 @@ public class LocalMusicFragment extends Fragment {
 														File wwwroot = new File(
 																C.MP3SRC);
 														//n = new NanoHTTPD(8089, wwwroot);
-														//n = new NanoHTTPD(49152, wwwroot);
-														n = new NanoHTTPD(40721, wwwroot);
+														n = new NanoHTTPD(80, wwwroot);
+														//n = new NanoHTTPD(40721, wwwroot);
 														Log.e("a", getLocalIpAddress());
 													} catch (IOException e) {
 														// TODO Auto-generated catch

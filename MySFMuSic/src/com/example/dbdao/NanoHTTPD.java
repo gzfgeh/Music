@@ -233,7 +233,7 @@ public class NanoHTTPD
 					try
 					{
 						while( true )
-							new HTTPSession( myServerSocket.accept());
+							new HTTPSession( myServerSocket.accept());		//使用accept()阻塞等待客户请求
 					}
 					catch ( IOException ioe )
 					{}
@@ -473,7 +473,7 @@ public class NanoHTTPD
 				// Read the request line
 				String inLine = in.readLine();
 				
-				Log.i("SearchThread", inLine + "-------------------------");
+				Log.i("a", inLine + "-------------------------");
 				
 				if (inLine == null) return;
 				StringTokenizer st = new StringTokenizer( inLine );
