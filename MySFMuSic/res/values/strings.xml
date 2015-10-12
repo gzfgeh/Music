@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SF音乐</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+
+    <!-- 消除警告，可忽略 -->
+    <string name="d">图片描述</string>
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="crash_report">Application Crashed:</string>
+
+    <string name="toastFailed">失败!</string>
+    <string name="buttonOp">更多&#8230;</string>
+
+    <!-- For Simple Config Layout Interface -->
+    <string name="wifi_scan">Wi-Fi网络</string>
+    <string name="pin_text">PIN</string>
+    <string name="qrcode_desc">QRCode</string>
+    <string name="qrcode_title">QRcode扫描</string>
+    <string name="qrcode_cancel">取消</string>
+    <string name="start_config">开始</string>
+    <string name="stop_config">按下停止</string>
+
+    <!-- For Simple Control Layout Interface -->
+    <string name="dev_discovery">连接设备</string>
+    <string name="rename_dev">重命名设备</string>
+    <string name="del_prof">拆卸装置</string>
+
+    <!-- Button label to connect to a wifi network-->
+    <string name="connect">连接</string>
+    <string name="cancel">取消</string>
+    <!--  !!!!!!!! vpn_connect_toTitle of VPN connect dialog -->
+    <string name="wifi_connect_to">连接到  %s</string>
+    <!-- Wi-Fi IP address label -->
+    <string name="ip_address">IP地址</string>
+    <!-- Label for the signal strength -->
+    <string name="signal">信号强度</string>
+
+     <!-- Button caption to forget a wifi network -->
+    <string name="forget_network">Forget</string>
+    <!-- Label for status of connection -->
+    <string name="wifi_status">Status</string>
+    <!--Wi-Fi settings screen, summary text for network when connected -->
+    <string name="status_connected">连接</string>
+    <string name="status_connecting">连接 	&#8230;</string>
+    <!-- Label for link speed (wifi) -->
+    <string name="wifi_link_speed">速度</string>
+    <!-- Verbose wifi signal strength.  This is the best out of 4 levels. -->
+    <string name="wifi_signal_3">优良</string>
+    <!-- Verbose wifi signal strength.  This is the 2nd best out of 4 levels. -->
+    <string name="wifi_signal_2">好</string>
+    <!-- Verbose wifi signal strength.  This is the 3rd best out of 4 levels. -->
+    <string name="wifi_signal_1">一般</string>
+    <!-- Verbose wifi signal strength.  This is the worst out of 4 levels. -->
+    <string name="wifi_signal_0">差</string>
+    <!-- Label for the security of a wifi network -->
+    <string name="security">安全</string>
+    <!-- Value for the wifi security.  This means no encryption. -->
+    <string name="wifi_security_open">打开</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_wpa">WPA</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_wpa2">WPA2</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_wpa_eap">WPA-EAP</string>
+    <!-- Value for the wifi security -->
+    <string name="wifi_security_ieee8021x">IEEE8021X</string>
+
+
+    <string name="please_type_passphrase">无线密码</string>
+    <string name="wifi_show_password">显示密码.</string>
+
+    <string name="wifi_change_password">更改密码</string>
+    <string name="button_change_password">修改</string>
+    <!-- An edit field's grayed out value when it has not been modified -->
+    <string name="wifi_password_unchanged">(unchanged)</string>
+    <!-- Button caption to save a configuration wifi -->
+    <string name="wifi_save_config">Save</string>
+
+    <string name="adhoc_not_supported_yet">特别是不支持Android平台的呢!</string>
+
+    <string name="dummy_content_description">""</string>
+</resources>

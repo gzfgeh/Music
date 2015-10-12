@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mysfmusic"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+              <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--  从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	
+	 <!-- 以下是使用wifi访问网络所需的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" ></uses-permission>
+	<uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+	    <!-- 以下是使用camera所需的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:name="com.example.dlna.DMCApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tubiao"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            
+            android:windowSoftInputMode="adjustPan"
+            android:name="com.example.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+         <!-- 注册服务 -->
+        <service android:name="com.example.service.PlayerService">
+			<intent-filter>
+			    <action android:name="com.example.service.MUSIC_SERVICE"/>
+			</intent-filter>            
+        </service>
+         <service android:name="com.example.service.DownloadMusicService">
+			<intent-filter>
+			    <action android:name="com.example.service.DWON_SERVICE"/>
+			</intent-filter>            
+        </service>
+        <activity   
+            android:name="com.example.activity.PlayActivity"
+            android:label="歌曲歌词" > </activity>
+                <activity   
+            android:name="com.realtek.simpleconfig.SCTest"
+            android:label="歌曲歌词" > </activity>
+        <activity   
+            android:name="com.example.activity.PeiZhiActivity"
+            android:label="连接音响" > 
+              </activity>
+                <activity
+            android:name="com.realtek.simpleconfig.SettingsActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.exception.uncaughthandler.CranshReport"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/crash_report"
+            android:process=":Crash" />
+
+		<activity android:name="com.wifi.connecter.MainActivity"
+			android:theme="@android:style/Theme.Dialog"
+			android:launchMode="singleInstance"
+			android:excludeFromRecents="true"
+			android:noHistory="true">
+			<intent-filter>
+				<category android:name="android.intent.category.INFO" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.wifi.connecter.CONNECT_OR_EDIT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <service android:name="com.example.dlna.DLNAService" >
+        </service>
+        	<service android:name="ReenableAllApsWhenNetworkStateChanged$BackgroundService"/>
+    </application>
+
+</manifest>

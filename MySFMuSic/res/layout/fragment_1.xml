@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="本地音乐列表"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/btn"
+        android:gravity="center"
+         >
+	
+        <Button
+            android:id="@+id/fm1_bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接音乐设备" 
+            android:drawableLeft="@drawable/music"
+            android:background="#00000000"
+            />
+       
+    </LinearLayout>
+ 		<Button
+            android:id="@+id/fm1_bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试配置" 
+            />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/fm_1_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="本地还没音乐，去网络音乐看看？"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/fm_1_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" >
+        </ListView>
+        <!--
+		<com.ldw.music.list.XListView
+		     android:id="@+id/fm_1_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible">
+		    
+		</com.ldw.music.list.XListView> -->
+    </FrameLayout>
+
+</LinearLayout>

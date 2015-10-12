@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:orientation="horizontal"  
+    android:padding="5dip" >  
+
+      
+    <!-- 歌曲名-->  
+    <TextView  
+        android:id="@+id/tv_list_name"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignTop="@+id/thumbnail"  
+        android:layout_toRightOf="@+id/thumbnail"  
+        android:text="Rihanna Love the way lie"  
+        android:textColor="#040404"  
+        android:typeface="sans"   
+        android:textSize="15dip"  
+        android:textStyle="bold"/>  
+  
+    <!-- 歌手名 -->  
+    <TextView  
+        android:id="@+id/tv_list_musicname"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_below="@id/tv_list_name"  
+        android:textColor="#343434"  
+        android:textSize="10dip"  
+        android:layout_marginTop="1dip"  
+        android:layout_toRightOf="@+id/thumbnail"  
+        android:text="Just gona stand there and ..." />  
+  
+    <!-- 歌曲播放时间
+    <TextView  
+        android:id="@+id/duration"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentRight="true"  
+        android:layout_alignTop="@id/tv_list_name"  
+        android:gravity="right"  
+        android:text="5:45"  
+        android:layout_marginRight="5dip"  
+        android:textSize="10dip"  
+        android:textColor="#10bcc9"  
+        android:textStyle="bold"/>  
+         -->  
+     <!-- 进入播放 -->      
+     <ImageView 
+         android:id="@+id/iv_list_item_dow"
+         android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:src="@drawable/download"  
+        android:layout_alignParentRight="true"  
+        android:layout_centerVertical="true"/>  
+  
+</RelativeLayout>  

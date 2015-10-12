@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+		<LinearLayout android:id="@+id/top"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<Button android:id="@+id/scan_wifi"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dip"
+				android:layout_weight="3"
+				android:text="查询"/>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/bottom"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_alignParentBottom="true"  >
+
+			<LinearLayout
+			    android:id="@+id/pin"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+
+				
+
+			</LinearLayout>
+
+			<LinearLayout android:id="@+id/action"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+
+				<Button
+				    android:id="@+id/start_config"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:text="配置" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/center"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_above="@id/bottom"
+			android:layout_below="@id/top" >
+
+			<ListView android:id="@+id/all_wifi_network"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"/>
+		</LinearLayout>
+
+</RelativeLayout>

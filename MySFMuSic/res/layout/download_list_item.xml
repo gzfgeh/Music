@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/fm_4_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title" />
+
+        <ProgressBar
+            android:id="@+id/fm_4_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/fm_4_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0KB" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fm_4_btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:text="download"
+       	android:layout_gravity="center_vertical"
+       	android:focusable="false" />
+
+</LinearLayout>

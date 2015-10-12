@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+        android:visibility="gone"
+    android:text="最近播放列表"
+    />
+      <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       
+        >
+        <TextView
+            android:id="@+id/fm_3_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="最近木有播放音乐"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:visibility="visible"
+             />
+
+        <ListView
+            android:id="@+id/fm_3_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" >
+		</ListView>
+    </FrameLayout> 
+
+</LinearLayout>
