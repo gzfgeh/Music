@@ -123,7 +123,9 @@ public class ControlActivity extends BaseActivity implements OnClickListener {
 		setController(new MultiPointController());
 		mDevice = DLNAContainer.getInstance().getSelectedDevice();
 
-		urls.add("http://video19.ifeng.com/video07/2013/11/11/281708-102-007-1138.mp4");// 我们结婚吧
+		//urls.add("http://video19.ifeng.com/video07/2013/11/11/281708-102-007-1138.mp4");// 我们结婚吧
+		//urls.add("http://music.baidu.com/data/music/file?xcode=b562edeac4128a3c4394f800f7f2550e&song_id=247911654?link=http://yinyueshiting.baidu.com/data2/music/247912224/24791165410800064.mp3");
+		urls.add("http://192.168.1.207:49152/150542.mp3");
 		//urls.add("http://video19.ifeng.com/video06/2012/09/28/97b03b63-1133-43d0-a6ff-fb2bc6326ac7.mp4");// 伊能静
 		//urls.add("http://video19.ifeng.com/video06/2012/04/11/629da9ec-60d4-4814-a940-997e6487804a.mp4"); // 佟丽娅
 
