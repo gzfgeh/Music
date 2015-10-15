@@ -215,7 +215,7 @@ public class PlayActivity extends BaseActivity {
 								.equals("null")) {
 							String path = "http://"
 									+ LocalMusicFragment.getLocalIpAddress()
-									+ ":8089/"
+									+ ":1326/"
 									+ LocalMusicFragment.queryMusicinfo.get(
 											LocalMusicFragment.Selected)
 											.getId() + ".mp3";
@@ -301,7 +301,7 @@ public class PlayActivity extends BaseActivity {
 								.equals("null")) {
 							String path = "http://"
 									+ LocalMusicFragment.getLocalIpAddress()
-									+ ":8089/"
+									+ ":1326/"
 									+ LocalMusicFragment.queryMusicinfo.get(
 											LocalMusicFragment.Selected)
 											.getId() + ".mp3";

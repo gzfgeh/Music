@@ -61,7 +61,7 @@ public class RecentlyBroadcastFragment extends Fragment {
 							Log.e("a", ("queryMusicinfo.get(Selected).getSDLRC():"+(queryMusicinfo.get(Selected).getSDLRC()+"")));
 							if(!(queryMusicinfo.get(Selected).getSDLRC()+"").equals("null")){
 								String path = "http://" + LocalMusicFragment.getLocalIpAddress()
-										+ ":49152/"
+										+ ":1326/"
 										+ queryMusicinfo.get(arg2).getId()
 										+ ".mp3";
 								// String

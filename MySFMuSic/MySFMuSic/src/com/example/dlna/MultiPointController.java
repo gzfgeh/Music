@@ -8,9 +8,12 @@ import android.text.TextUtils;
 
 public class MultiPointController implements IController {
 	private static final String AVTransport1 = "urn:schemas-upnp-org:service:AVTransport:1";
-	private static final String SetAVTransportURI = "SetAVTransportURI";
 	private static final String RenderingControl = "urn:schemas-upnp-org:service:RenderingControl:1";
 	private static final String Play = "Play";
+	private static final String SetAVTransportURI = "SetAVTransportURI";
+	
+//	private static final String AVTransport1 = "urn:schemas-upnp-org:device-1-0";
+//	private static final String RenderingControl = "urn:schemas-upnp-org:device:MediaRenderer:1";
 
 	@Override
 	public boolean play(Device device, String path) {

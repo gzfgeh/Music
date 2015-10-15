@@ -115,7 +115,7 @@ public class LocalMusicFragment extends Fragment {
 						if (queryMusicinfo.size() > 0) {
 							if (C.isdevies) {
 
-								String path = "http://" + getLocalIpAddress()+ ":39500/"
+								String path = "http://" + getLocalIpAddress()+ ":49494/"
 										+ queryMusicinfo.get(arg2).getId()
 										+ ".mp3";
 								//path = "http://music.baidu.com/data/music/file?xcode=b562edeac4128a3c4394f800f7f2550e&song_id=247911654?link=http://yinyueshiting.baidu.com/data2/music/247912224/24791165410800064.mp3";
@@ -205,7 +205,7 @@ public class LocalMusicFragment extends Fragment {
 													try {
 														File wwwroot = new File(
 																C.MP3SRC);
-														n = new NanoHTTPD(39500, wwwroot);
+														n = new NanoHTTPD(49494, wwwroot);
 														Log.e("a", getLocalIpAddress());
 													} catch (Exception e) {
 														// TODO Auto-generated catch

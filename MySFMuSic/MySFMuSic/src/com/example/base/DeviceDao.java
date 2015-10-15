@@ -45,6 +45,7 @@ public class DeviceDao {
 		if (controller == null) {
 			controller = new MultiPointController();
 		}
+	
 		
 		return dao;
 		
@@ -172,6 +173,12 @@ public class DeviceDao {
 			@Override
 			public void run() {
 				Log.e("a", "到了goon"+positio);
+				
+				if (device == null)
+					device = DLNAContainer.getInstance().getSelectedDevice();
+				if (positio == null)
+					getPositio();
+				
 				final boolean isSuccess = controller.goon(device,
 						positio);
 				

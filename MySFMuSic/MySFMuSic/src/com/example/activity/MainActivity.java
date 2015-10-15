@@ -292,8 +292,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 					}else{
 				
 						C.dao.goon();
-//						C.dao.paly(RecentlyBroadcastFragment.queryMusicinfo
-//								.get(RecentlyBroadcastFragment.Selected));
+//						C.dao.paly(LocalMusicFragment.queryMusicinfo
+//								.get(LocalMusicFragment.Selected));
 					}
 				}else{
 					if (C.isMyPlay) {
